@@ -1,4 +1,9 @@
-.container {
+.form-container {
+  position: fixed;
+  top: -1;
+  left: 0;
+  width: 100%;
+  z-index: 100;
   display: flex;
   justify-content: center;
   padding: 20px;
@@ -18,11 +23,11 @@
 
 .btn {
   position: absolute;
-  top: 0;
-  right: 0;
-  padding: 10px;
+  top: 2px;
+  right: 2px;
+  padding: 8px;
 
   background-color: whitesmoke;
-  border: 2px solid gray;
+  border: 2px solid transparent;
   border-radius: 0.5rem;
 }

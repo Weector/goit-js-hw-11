@@ -1,0 +1,36 @@
+.gallery {
+  margin-top: 100px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 0;
+  justify-content: center;
+}
+
+.info {
+  display: flex;
+  gap: 10px;
+  width: auto;
+  justify-content: center;
+}
+
+.info-item {
+  display: grid;
+  width: 75px;
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.9;
+}
+
+.foto-card {
+  align-items: center;
+  width: 400px;
+  height: 380px;
+  transition: transform 400ms ease-out;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.foto-card:hover {
+  transform: scale(1.05);
+}

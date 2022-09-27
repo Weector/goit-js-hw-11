@@ -1,12 +1,12 @@
 import axios from 'axios';
+import { Notify } from 'notiflix';
 
-export async function getPictures() {
+export async function fetchPictures(value, page) {
   try {
-    const response = await axios.get(
-      `https://pixabay.com/api/?key=30186548-cb697292edee32826731eafdb&q=yellow+flowers&image_type=photo`
+    return await axios.get(
+      `https://pixabay.com/api/?key=30186548-cb697292edee32826731eafdb&q=${value}&image_type=photo&orientation=horizontal&safesearch=true&page=${page}&per_page=40`
     );
-    console.log(response);
   } catch (error) {
-    console.error(error);
+    Notify.failure(`${error}`);
   }
 }
