@@ -54,7 +54,7 @@ function getPicturesMarkup(pictures) {
       return `
     <div class='foto-card'>
       <a href="${picture.largeImageURL}" alt="${picture.tags}">
-          <img src="${picture.webformatURL}" alt="${picture.tags}" loading="lazy" width="400px" height="300px"/>
+          <img src="${picture.webformatURL}" alt="${picture.tags}" loading="lazy" width="360px" height="280px"/>
       </a>
       <div class="info">
       <p class="info-item">
